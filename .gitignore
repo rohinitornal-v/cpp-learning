@@ -1,0 +1,14 @@
+# Executable
+main
+
+# macOS debug symbols
+*.dSYM/
+
+# Object files
+*.o
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
