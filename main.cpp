@@ -1,5 +1,13 @@
 
 #include <iostream>
+#include <cstdint>
+
+double my_average(int a, int8_t b, uint32_t c)
+{
+  double result = 0.0;
+  result = (a + b + c) / 7.0;
+  return result;
+}
 
 int add(int x, int y)
 {
