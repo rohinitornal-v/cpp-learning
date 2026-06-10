@@ -1,9 +1,11 @@
 
 #include <iostream>
 
-int add(int a, int b)
+int add(int x, int y)
 {
-  return a + b;
+  int sum_result = 0;
+  sum_result = (x + y);
+  return sum_result;
 }
 
 int main()
@@ -16,21 +18,17 @@ int main()
             << std ::endl;
   std::cout << "My name is Rohini"
             << std ::endl;
-  std::cout << "I will become a programmer"
-            << std ::endl;
   std::cout << "************************"
             << std ::endl;
 
-  bool my_flag = false;
-  int a = 4, b = 6;
+  int a = 10;
+  int8_t b = 15;
+  uint32_t c = 20;
 
-  int sum = add(5, 9);
+  double avg = my_average(a, b, c);
 
-  std::cout << " a = " << a << "\n";
-  std::cout << " b = " << b << "\n";
-  std::cout << " my_flag = " << my_flag << "\n";
-
-  std::cout << "The sum is: " << sum << std::endl;
-
-  return 0;
+  int x = 9, y = 7;
+  int sum = add(x, y);
+  std::cout << "The average of 3 values is: " << avg << std::endl;
+  std::cout << "The sum of 2 values is: " << sum << std::endl;
 }
