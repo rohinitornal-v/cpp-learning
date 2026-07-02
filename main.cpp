@@ -18,6 +18,7 @@ int add(int x, int y)
 
 int main()
 {
+  int score = 900;
   std::cout << "Hello my first C++ program"
             << std ::endl;
   std::cout << "************************"
@@ -39,4 +40,9 @@ int main()
   int sum = add(x, y);
   std::cout << "The average of 3 values is: " << avg << std::endl;
   std::cout << "The sum of 2 values is: " << sum << std::endl;
+
+  if (score > 1000)
+    std::cout << "Your score is greater than 1000" << std::endl;
+  else
+    std::cout << "Your score is less than 1000" << std::endl;
 }
