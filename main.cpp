@@ -45,4 +45,48 @@ int main()
     std::cout << "Your score is greater than 1000" << std::endl;
   else
     std::cout << "Your score is less than 1000" << std::endl;
+
+  // This is a Ternary Conditional Operator example - more compact form of if-else statement
+
+  int health = 80;
+
+  std::string health_status = (health >= 80) ? "Alive" : "Dead";
+  std::cout << "Player is " << health_status << std::endl;
+
+  float operand_1, operand_2, result;
+  char operations;
+
+  std::cout << "Enter First Number:" << std::flush;
+  std::cin >> operand_1;
+  std::cout << "Enter Second Number:" << std::flush;
+  std::cin >> operand_2;
+  std::cout << "Enter Operation (+, -, *, /):" << std::flush;
+  std::cin >> operations;
+
+  // Switch Statement Examlpe
+  switch (operations)
+  {
+  case '+':
+    result = operand_1 + operand_2;
+    break;
+
+  case '-':
+    result = operand_1 - operand_2;
+    break;
+
+  case '*':
+    result = operand_1 * operand_2;
+    break;
+
+  case '/':
+    result = operand_1 / operand_2;
+    break;
+
+  default:
+    std::cout << "Invalid operation" << std::endl;
+  }
+
+  std::cout << "Result of the operations is :" << result << std::endl;
+
+  return 0;
 }
